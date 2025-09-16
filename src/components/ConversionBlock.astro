@@ -1,0 +1,123 @@
+---
+// Conversion Block / Mid-Page CTA
+---
+
+<section class="bg-primary py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <!-- Main Content -->
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+      ¿Listo para Discutir tu Proyecto?
+    </h2>
+
+    <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+      Obtén una cotización personalizada adaptada a tus necesidades específicas
+      de trabajos verticales.
+    </p>
+
+    <!-- Primary CTA Button -->
+    <div class="mb-8">
+      <a
+        href="#cotizar"
+        class="inline-block bg-secondary text-white px-10 py-5 text-xl font-semibold rounded-lg hover:bg-yellow-500 transform hover:scale-105 transition-all duration-300 shadow-lg"
+        tabindex="0"
+        aria-label="Solicitar estimación gratuita"
+      >
+        Solicitar una Estimación Gratuita
+      </a>
+    </div>
+
+    <!-- Secondary CTA -->
+    <div class="text-center">
+      <p class="text-white mb-2">¿Prefieres llamar?</p>
+      <a
+        href="tel:+34-XXX-XXX-XXX"
+        class="text-white underline hover:text-secondary transition-colors text-lg font-medium"
+      >
+        +34 XXX XXX XXX
+      </a>
+    </div>
+
+    <!-- Trust Indicators -->
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+      <div class="flex flex-col items-center">
+        <div
+          class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3"
+        >
+          <svg
+            class="w-8 h-8 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-white font-semibold mb-1">Respuesta Rápida</h3>
+        <p class="text-gray-200 text-sm">Cotización en 24 horas</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div
+          class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3"
+        >
+          <svg
+            class="w-8 h-8 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-white font-semibold mb-1">Sin Compromiso</h3>
+        <p class="text-gray-200 text-sm">Consulta gratuita</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div
+          class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3"
+        >
+          <svg
+            class="w-8 h-8 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-white font-semibold mb-1">Experiencia</h3>
+        <p class="text-gray-200 text-sm">Más de 10 años</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Smooth scroll for CTA button
+  const handleCtaClick = (event: Event) => {
+    event.preventDefault();
+    const target = document.querySelector("#cotizar");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const ctaButton = document.querySelector('a[href="#cotizar"]');
+  if (ctaButton) {
+    ctaButton.addEventListener("click", handleCtaClick);
+  }
+</script>

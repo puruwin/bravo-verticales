@@ -1,0 +1,108 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Bravo Trabajos Verticales - Servicios profesionales de acceso vertical, mantenimiento de fachadas y trabajos en altura. Seguros, eficientes y confiables.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SEO and additional meta tags -->
+  </head><fragment slot="head">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Bravo Trabajos Verticales" />
+    <meta
+      name="keywords"
+      content="trabajos verticales, acceso por cuerda, mantenimiento fachadas, limpieza ventanas, aerogeneradores, inspecciones altura, seguridad industrial, IRATA, SPRAT"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bravotrabajosverticales.com/" />
+    <meta
+      property="og:title"
+      content="Bravo Trabajos Verticales - Servicios Profesionales de Acceso Vertical"
+    />
+    <meta
+      property="og:description"
+      content="Servicios seguros, eficientes y confiables de trabajos en altura. Inspecciones, mantenimiento de fachadas, limpieza de ventanas y servicios de aerogeneradores."
+    />
+    <meta
+      property="og:image"
+      content="https://bravotrabajosverticales.com/og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://bravotrabajosverticales.com/"
+    />
+    <meta
+      property="twitter:title"
+      content="Bravo Trabajos Verticales - Servicios Profesionales de Acceso Vertical"
+    />
+    <meta
+      property="twitter:description"
+      content="Servicios seguros, eficientes y confiables de trabajos en altura. Inspecciones, mantenimiento de fachadas, limpieza de ventanas y servicios de aerogeneradores."
+    />
+    <meta
+      property="twitter:image"
+      content="https://bravotrabajosverticales.com/og-image.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bravotrabajosverticales.com/" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#2F45AF" />
+    <meta name="msapplication-TileColor" content="#2F45AF" />
+  </fragment>
+
+  <!-- Schema.org markup for local business -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Bravo Trabajos Verticales",
+      "description": "Servicios profesionales de acceso vertical, mantenimiento de fachadas y trabajos en altura",
+      "url": "https://bravotrabajosverticales.com",
+      "telephone": "+34-XXX-XXX-XXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dirección de la empresa",
+        "addressLocality": "Ciudad",
+        "addressRegion": "Región",
+        "postalCode": "Código Postal",
+        "addressCountry": "ES"
+      },
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "priceRange": "$$"
+    }
+  </script>
+
+  <body class="font-sans antialiased">
+    <slot />
+  </body>
+</html>

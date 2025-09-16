@@ -1,16 +1,28 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import HeroSection from "../components/HeroSection.astro";
+import TrustSection from "../components/TrustSection.astro";
+import ServicesSection from "../components/ServicesSection.astro";
+import WhyChooseUsSection from "../components/WhyChooseUsSection.astro";
+import ConversionBlock from "../components/ConversionBlock.astro";
+import ProjectsGallery from "../components/ProjectsGallery.astro";
+import ContactSection from "../components/ContactSection.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+	title="Bravo Trabajos Verticales - Servicios Profesionales de Acceso Vertical"
+>
+	<Header />
+	<main>
+		<HeroSection />
+		<TrustSection />
+		<ServicesSection />
+		<WhyChooseUsSection />
+		<ConversionBlock />
+		<ProjectsGallery />
+		<ContactSection />
+	</main>
+	<Footer />
+</Layout>
