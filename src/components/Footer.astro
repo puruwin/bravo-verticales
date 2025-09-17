@@ -1,5 +1,7 @@
 ---
-// Footer component with contact information and links
+import data from "../data.json";
+
+const { empresa, contacto } = data;
 ---
 
 <footer class="bg-primary text-white">
@@ -28,7 +30,7 @@
                 stroke-width="2"
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
-            <span>Dirección de la empresa, Ciudad, CP</span>
+            <span>{contacto.ubicacion}</span>
           </div>
           <div class="flex items-center">
             <svg
@@ -45,10 +47,10 @@
               ></path>
             </svg>
             <a
-              href="tel:+34-XXX-XXX-XXX"
+              href={`tel:${contacto.telefono}`}
               class="text-secondary hover:text-yellow-300 transition-colors"
             >
-              +34 XXX XXX XXX
+              {contacto.telefono}
             </a>
           </div>
           <div class="flex items-center">
@@ -66,10 +68,10 @@
               ></path>
             </svg>
             <a
-              href="mailto:info@bravotrabajosverticales.com"
+              href={`mailto:${contacto.email}`}
               class="hover:text-secondary transition-colors"
             >
-              info@bravotrabajosverticales.com
+              {contacto.email}
             </a>
           </div>
         </div>
@@ -81,27 +83,33 @@
         <ul class="space-y-2">
           <li>
             <a href="#servicios" class="hover:text-secondary transition-colors"
-              >Servicios</a>
+              >Servicios</a
+            >
           </li>
           <li>
             <a href="#proyectos" class="hover:text-secondary transition-colors"
-              >Proyectos</a>
+              >Proyectos</a
+            >
           </li>
           <li>
             <a href="#nosotros" class="hover:text-secondary transition-colors"
-              >Nosotros</a>
+              >Nosotros</a
+            >
           </li>
           <li>
             <a href="#contacto" class="hover:text-secondary transition-colors"
-              >Contacto</a>
+              >Contacto</a
+            >
           </li>
           <li>
             <a href="/privacidad" class="hover:text-secondary transition-colors"
-              >Política de Privacidad</a>
+              >Política de Privacidad</a
+            >
           </li>
           <li>
             <a href="/terminos" class="hover:text-secondary transition-colors"
-              >Términos de Servicio</a>
+              >Términos de Servicio</a
+            >
           </li>
         </ul>
       </div>
@@ -165,7 +173,7 @@
     <!-- Copyright -->
     <div class="border-t border-blue-800 mt-8 pt-8 text-center text-gray-300">
       <p>
-        &copy; 2024 Bravo Trabajos Verticales. Todos los derechos reservados.
+        &copy; 2024 {empresa.nombre}. Todos los derechos reservados.
       </p>
     </div>
   </div>

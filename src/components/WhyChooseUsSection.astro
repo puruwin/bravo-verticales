@@ -1,5 +1,7 @@
 ---
-// Why Choose Us Section with key differentiators
+import data from "../data.json";
+
+const { empresa, ventajas, por_que_elegirnos } = data;
 ---
 
 <section id="nosotros" class="bg-white py-16">
@@ -7,122 +9,53 @@
     <!-- Section Header -->
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">
-        Por Qué los Clientes Confían en Bravo Trabajos Verticales
+        {por_que_elegirnos.titulo}
       </h2>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Nuestro compromiso con la excelencia, seguridad y resultados
-        excepcionales nos distingue en la industria
+        Aunque somos una empresa joven, en {empresa.nombre} tenemos una premisa clara:
+        la seguridad primero
       </p>
     </div>
 
     <!-- Differentiators Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-      <!-- Safety Record -->
-      <div class="text-center">
-        <div
-          class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
-        >
-          <svg
-            class="w-10 h-10 text-primary"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-            ></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">Récord de Seguridad</h3>
-        <p class="text-gray-600">
-          Más de 10 años sin accidentes graves. Certificaciones internacionales
-          en seguridad y protocolos estrictos de trabajo en altura.
-        </p>
-      </div>
+      {
+        ventajas.lista.map((ventaja, index) => {
+          const colors = [
+            "bg-green-100",
+            "bg-blue-100",
+            "bg-purple-100",
+            "bg-yellow-100",
+          ];
+          const colorClass = colors[index % colors.length];
 
-      <!-- Certified Professionals -->
-      <div class="text-center">
-        <div
-          class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
-        >
-          <svg
-            class="w-10 h-10 text-primary"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-            ></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">
-          Profesionales Certificados
-        </h3>
-        <p class="text-gray-600">
-          Equipo altamente capacitado con certificaciones IRATA, SPRAT y
-          formación continua en las últimas técnicas de acceso por cuerda.
-        </p>
-      </div>
-
-      <!-- Advanced Technology -->
-      <div class="text-center">
-        <div
-          class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"
-        >
-          <svg
-            class="w-10 h-10 text-primary"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            ></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">Tecnología Avanzada</h3>
-        <p class="text-gray-600">
-          Equipos de última generación, drones para inspecciones, sistemas de
-          comunicación avanzados y herramientas especializadas.
-        </p>
-      </div>
-
-      <!-- Efficiency & Reliability -->
-      <div class="text-center">
-        <div
-          class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6"
-        >
-          <svg
-            class="w-10 h-10 text-primary"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">
-          Eficiencia y Confiabilidad
-        </h3>
-        <p class="text-gray-600">
-          Cumplimiento garantizado de plazos, presupuestos transparentes y
-          comunicación constante durante todo el proyecto.
-        </p>
-      </div>
+          return (
+            <div class="text-center">
+              <div
+                class={`w-20 h-20 ${colorClass} rounded-full flex items-center justify-center mx-auto mb-6`}
+              >
+                <svg
+                  class="w-10 h-10 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-3">
+                {ventaja.titulo}
+              </h3>
+              <p class="text-gray-600">{ventaja.descripcion}</p>
+            </div>
+          );
+        })
+      }
     </div>
 
     <!-- Additional Benefits -->
@@ -148,9 +81,18 @@
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary mb-2">Soporte 24/7</h4>
+            <h4 class="font-semibold text-primary mb-2">
+              Atención Personalizada
+            </h4>
             <p class="text-gray-600 text-sm">
-              Disponibilidad total para emergencias y consultas urgentes.
+              Atención personalizada en toda {empresa.ubicacion.base}, desde {
+                empresa.ubicacion.zona_actuacion[0]
+              } hasta
+              {
+                empresa.ubicacion.zona_actuacion[
+                  empresa.ubicacion.zona_actuacion.length - 1
+                ]
+              }.
             </p>
           </div>
         </div>
@@ -176,10 +118,11 @@
           </div>
           <div>
             <h4 class="font-semibold text-primary mb-2">
-              Cobertura de Seguros
+              Limpieza y Cumplimiento
             </h4>
             <p class="text-gray-600 text-sm">
-              Pólizas completas de responsabilidad civil y accidentes.
+              Cuidamos la limpieza al finalizar cada intervención y respetamos
+              los plazos acordados.
             </p>
           </div>
         </div>
@@ -203,10 +146,13 @@
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary mb-2">Garantía de Calidad</h4>
+            <h4 class="font-semibold text-primary mb-2">
+              Conocimiento de la Zona
+            </h4>
             <p class="text-gray-600 text-sm">
-              Compromiso total con la satisfacción del cliente y calidad del
-              trabajo.
+              Conocemos el clima y las particularidades de {
+                empresa.ubicacion.base
+              }, fundamental para elegir materiales adecuados.
             </p>
           </div>
         </div>
@@ -239,7 +185,7 @@
         href="#contacto"
         class="text-secondary hover:text-yellow-600 font-semibold text-lg transition-colors"
       >
-        Saber Más Sobre Nuestro Compromiso con la Excelencia →
+        Solicitar Presupuesto Personalizado →
       </a>
     </div>
   </div>

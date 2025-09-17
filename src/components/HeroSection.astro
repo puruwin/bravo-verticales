@@ -1,5 +1,7 @@
 ---
-// Hero Section with background image and main CTA
+import data from "../data.json";
+
+const { empresa } = data;
 ---
 
 <section
@@ -35,11 +37,11 @@
     class="relative z-20 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
   >
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-      Alcanzando Nuevas Alturas en Soluciones Verticales
+      {empresa.titulo_completo}
     </h1>
 
     <p class="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-      Servicios Seguros, Eficientes y Confiables de Trabajos en Altura
+      {empresa.descripcion_empresa}
     </p>
 
     <!-- Primary CTA Button -->
@@ -69,7 +71,7 @@
             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
             clip-rule="evenodd"></path>
         </svg>
-        <span>Certificados de Seguridad</span>
+        <span>Sin Andamios</span>
       </div>
       <div class="flex items-center">
         <svg
@@ -82,7 +84,7 @@
             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
             clip-rule="evenodd"></path>
         </svg>
-        <span>Profesionales Experimentados</span>
+        <span>Máxima Seguridad</span>
       </div>
       <div class="flex items-center">
         <svg
@@ -95,7 +97,7 @@
             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
             clip-rule="evenodd"></path>
         </svg>
-        <span>Respuesta Rápida 24/7</span>
+        <span>Cumplimiento de Plazos</span>
       </div>
     </div>
   </div>

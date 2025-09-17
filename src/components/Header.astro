@@ -1,5 +1,7 @@
 ---
-// Header component with navigation
+import data from "../data.json";
+
+const { empresa } = data;
 ---
 
 <header class="bg-white shadow-lg sticky top-0 z-50">
@@ -8,7 +10,7 @@
       <!-- Logo -->
       <div class="flex-shrink-0">
         <a href="/" class="text-2xl font-bold text-primary">
-          <img src="/logo.svg" alt="Bravo Trabajos Verticales" class="w-20" />
+          <img src="/logo.svg" alt={empresa.nombre} class="w-20" />
         </a>
       </div>
 
