@@ -41,12 +41,14 @@ const { empresa } = data;
           >
             Contacto
           </a>
-          <a
-            href="#cotizar"
+          <button
+            id="header-cta-desktop"
             class="bg-secondary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-yellow-500 transition-colors"
+            tabindex="0"
+            aria-label="Pedir presupuesto"
           >
-            Cotizar Ahora
-          </a>
+            Pedir presupuesto
+          </button>
         </div>
       </div>
 
@@ -105,12 +107,14 @@ const { empresa } = data;
         >
           Contacto
         </a>
-        <a
-          href="#cotizar"
-          class="bg-secondary text-white block px-3 py-2 text-base font-medium rounded-md"
+        <button
+          id="header-cta-mobile"
+          class="bg-secondary text-white block px-3 py-2 text-base font-medium rounded-md w-full text-left"
+          tabindex="0"
+          aria-label="Cotizar ahora"
         >
           Cotizar Ahora
-        </a>
+        </button>
       </div>
     </div>
   </nav>
@@ -129,5 +133,40 @@ const { empresa } = data;
 
   if (mobileMenuButton) {
     mobileMenuButton.addEventListener("click", handleMobileMenuToggle);
+  }
+
+  // Open modal for CTA buttons
+  const handleCtaClick = () => {
+    if (typeof (window as any).openContactModal === "function") {
+      (window as any).openContactModal();
+    }
+    // Close mobile menu if open
+    if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+      mobileMenu.classList.add("hidden");
+    }
+  };
+
+  // Desktop CTA
+  const desktopCtaButton = document.getElementById("header-cta-desktop");
+  if (desktopCtaButton) {
+    desktopCtaButton.addEventListener("click", handleCtaClick);
+    desktopCtaButton.addEventListener("keydown", (e: KeyboardEvent) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleCtaClick();
+      }
+    });
+  }
+
+  // Mobile CTA
+  const mobileCtaButton = document.getElementById("header-cta-mobile");
+  if (mobileCtaButton) {
+    mobileCtaButton.addEventListener("click", handleCtaClick);
+    mobileCtaButton.addEventListener("keydown", (e: KeyboardEvent) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleCtaClick();
+      }
+    });
   }
 </script>

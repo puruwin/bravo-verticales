@@ -10,25 +10,17 @@ const { empresa } = data;
   <!-- Background Image -->
   <div class="absolute inset-0 z-0">
     <div
-      class="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60 z-10"
+      class="absolute inset-0 bg-gradient-to-r from-primary/85 to-primary/70 z-10"
     >
     </div>
-    <!-- Placeholder for background image - replace with actual image -->
-    <div
-      class="w-full h-full bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 flex items-center justify-center"
-    >
-      <div class="text-center text-white/20">
-        <svg
-          class="w-32 h-32 mx-auto mb-4"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-          ></path>
-        </svg>
-        <p class="text-lg">Imagen de trabajos verticales profesionales</p>
-      </div>
+    <!-- Real background image -->
+    <div class="w-full h-full relative">
+      <img
+        src="/img/reparacion_fach.webp"
+        alt="Trabajos verticales profesionales en fachadas"
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
     </div>
   </div>
 
@@ -46,14 +38,14 @@ const { empresa } = data;
 
     <!-- Primary CTA Button -->
     <div class="mb-8">
-      <a
-        href="#cotizar"
+      <button
+        id="hero-cta"
         class="inline-block bg-secondary text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-yellow-500 transform hover:scale-105 transition-all duration-300 shadow-lg"
         tabindex="0"
-        aria-label="Obtener cotización gratuita hoy"
+        aria-label="Obtener presupuesto gratuito hoy"
       >
-        Obtén tu Cotización Gratuita Hoy
-      </a>
+        Obtén tu Presupuesto Gratis Hoy
+      </button>
     </div>
 
     <!-- Trust indicators -->
@@ -122,17 +114,21 @@ const { empresa } = data;
 </section>
 
 <script>
-  // Smooth scroll for CTA button
-  const handleCtaClick = (event: Event) => {
-    event.preventDefault();
-    const target = document.querySelector("#cotizar");
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
+  // Open modal for CTA button
+  const handleCtaClick = () => {
+    if (typeof (window as any).openContactModal === "function") {
+      (window as any).openContactModal();
     }
   };
 
-  const ctaButton = document.querySelector('a[href="#cotizar"]');
+  const ctaButton = document.getElementById("hero-cta");
   if (ctaButton) {
     ctaButton.addEventListener("click", handleCtaClick);
+    ctaButton.addEventListener("keydown", (e: KeyboardEvent) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleCtaClick();
+      }
+    });
   }
 </script>

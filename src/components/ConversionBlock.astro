@@ -4,7 +4,6 @@
 import data from "../data.json";
 
 const { contacto } = data;
-
 ---
 
 <section class="bg-primary py-16">
@@ -21,14 +20,14 @@ const { contacto } = data;
 
     <!-- Primary CTA Button -->
     <div class="mb-8">
-      <a
-        href="#cotizar"
+      <button
+        id="conversion-cta"
         class="inline-block bg-secondary text-white px-10 py-5 text-xl font-semibold rounded-lg hover:bg-yellow-500 transform hover:scale-105 transition-all duration-300 shadow-lg"
         tabindex="0"
         aria-label="Solicitar estimación gratuita"
       >
         Solicitar una Estimación Gratuita
-      </a>
+      </button>
     </div>
 
     <!-- Secondary CTA -->
@@ -112,17 +111,21 @@ const { contacto } = data;
 </section>
 
 <script>
-  // Smooth scroll for CTA button
-  const handleCtaClick = (event: Event) => {
-    event.preventDefault();
-    const target = document.querySelector("#cotizar");
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
+  // Open modal for CTA button
+  const handleCtaClick = () => {
+    if (typeof (window as any).openContactModal === "function") {
+      (window as any).openContactModal();
     }
   };
 
-  const ctaButton = document.querySelector('a[href="#cotizar"]');
+  const ctaButton = document.getElementById("conversion-cta");
   if (ctaButton) {
     ctaButton.addEventListener("click", handleCtaClick);
+    ctaButton.addEventListener("keydown", (e: KeyboardEvent) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleCtaClick();
+      }
+    });
   }
 </script>

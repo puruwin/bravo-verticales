@@ -121,15 +121,17 @@ const { empresa, contacto } = data;
           Contáctanos directamente para obtener más información sobre nuestros
           servicios.
         </p>
-        <a
-          href="#contacto"
+        <button
+          id="footer-cta"
           class="inline-block bg-secondary text-white px-6 py-3 rounded-md font-medium hover:bg-yellow-500 transition-colors"
+          tabindex="0"
+          aria-label="Contáctanos directamente"
         >
           Contáctanos Directamente
-        </a>
+        </button>
 
         <!-- Social Media Icons -->
-        <div class="mt-6">
+        <!-- <div class="mt-6">
           <h4 class="text-sm font-semibold mb-3">Síguenos</h4>
           <div class="flex space-x-4">
             <a
@@ -165,16 +167,35 @@ const { empresa, contacto } = data;
                 ></path>
               </svg>
             </a>
-          </div>
-        </div>
+          </div> -->
       </div>
     </div>
+  </div>
 
-    <!-- Copyright -->
-    <div class="border-t border-blue-800 mt-8 pt-8 text-center text-gray-300">
-      <p>
-        &copy; 2024 {empresa.nombre}. Todos los derechos reservados.
-      </p>
-    </div>
+  <!-- Copyright -->
+  <div class="border-t border-blue-800 mt-8 pt-8 text-center text-gray-300">
+    <p>
+      &copy; 2025 {empresa.nombre}. Todos los derechos reservados.
+    </p>
   </div>
 </footer>
+
+<script>
+  // Open modal for Footer CTA button
+  const handleCtaClick = () => {
+    if (typeof (window as any).openContactModal === "function") {
+      (window as any).openContactModal();
+    }
+  };
+
+  const footerCtaButton = document.getElementById("footer-cta");
+  if (footerCtaButton) {
+    footerCtaButton.addEventListener("click", handleCtaClick);
+    footerCtaButton.addEventListener("keydown", (e: KeyboardEvent) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleCtaClick();
+      }
+    });
+  }
+</script>
