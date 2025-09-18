@@ -1,5 +1,5 @@
 ---
-// Projects/Gallery Section with hover effects
+// Gallery Section with modal functionality
 ---
 
 <section id="proyectos" class="bg-white py-16">
@@ -7,175 +7,245 @@
     <!-- Section Header -->
     <div class="text-center mb-12">
       <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">
-        Nuestros Proyectos Más Recientes
+        Galería de Nuestros Trabajos
       </h2>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Trabajos Verticales en Acción - Proyectos que demuestran nuestra
-        experiencia y compromiso
+        Trabajos Verticales en Acción - Haz clic en cualquier imagen para verla
+        en grande
       </p>
     </div>
 
-    <!-- Projects Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-      <!-- Project 1: Reparación de Fachada -->
+    <!-- Instagram-style Gallery Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-12">
+      <!-- Gallery Item 1 -->
       <div
-        class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
       >
-        <div class="aspect-w-16 aspect-h-12 relative">
-          <img
-            src="/img/reparacion_fach.webp"
-            alt="Reparación de fachada con trabajos verticales"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
+        <img
+          src="/img/reparacion_fach.webp"
+          alt="Reparación de fachada con trabajos verticales"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
         <div
-          class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
         >
-          <div class="text-center text-white p-6">
-            <h3 class="text-xl font-bold mb-2">Reparación de Fachada</h3>
-            <p class="text-sm mb-4">Rehabilitación completa sin andamios</p>
-            <span
-              class="inline-block bg-secondary text-white px-4 py-2 rounded text-sm font-semibold"
-            >
-              Ver Detalles
-            </span>
-          </div>
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
         </div>
       </div>
 
-      <!-- Project 2: Limpieza de Patios de Luces -->
+      <!-- Gallery Item 2 -->
       <div
-        class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
       >
-        <div class="aspect-w-16 aspect-h-12 relative">
-          <img
-            src="/img/patio_luces_1.webp"
-            alt="Limpieza de patio de luces con trabajos verticales"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
+        <img
+          src="/img/patio_luces_1.webp"
+          alt="Limpieza de patio de luces con trabajos verticales"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
         <div
-          class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
         >
-          <div class="text-center text-white p-6">
-            <h3 class="text-xl font-bold mb-2">Limpieza de Patios de Luces</h3>
-            <p class="text-sm mb-4">Acceso seguro a zonas complicadas</p>
-            <span
-              class="inline-block bg-secondary text-white px-4 py-2 rounded text-sm font-semibold"
-            >
-              Ver Detalles
-            </span>
-          </div>
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
         </div>
       </div>
 
-      <!-- Project 3: Instalación de Redes de Seguridad -->
+      <!-- Gallery Item 3 -->
       <div
-        class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
       >
-        <div class="aspect-w-16 aspect-h-12 relative">
-          <img
-            src="/img/red_seguridad_1.webp"
-            alt="Instalación de red de seguridad antiaves"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
+        <img
+          src="/img/red_seguridad_1.webp"
+          alt="Instalación de red de seguridad antiaves"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
         <div
-          class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
         >
-          <div class="text-center text-white p-6">
-            <h3 class="text-xl font-bold mb-2">Redes de Seguridad</h3>
-            <p class="text-sm mb-4">Sistemas antiaves profesionales</p>
-            <span
-              class="inline-block bg-secondary text-white px-4 py-2 rounded text-sm font-semibold"
-            >
-              Ver Detalles
-            </span>
-          </div>
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
         </div>
       </div>
 
-      <!-- Project 4: Reparación de Fachada 2 -->
+      <!-- Gallery Item 4 -->
       <div
-        class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
       >
-        <div class="aspect-w-16 aspect-h-12 relative">
-          <img
-            src="/img/reparacion_fach_3.webp"
-            alt="Trabajos de reparación en fachada"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
+        <img
+          src="/img/reparacion_fach_3.webp"
+          alt="Trabajos de reparación en fachada"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
         <div
-          class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
         >
-          <div class="text-center text-white p-6">
-            <h3 class="text-xl font-bold mb-2">Mantenimiento de Fachada</h3>
-            <p class="text-sm mb-4">Trabajos de altura especializados</p>
-            <span
-              class="inline-block bg-secondary text-white px-4 py-2 rounded text-sm font-semibold"
-            >
-              Ver Detalles
-            </span>
-          </div>
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
         </div>
       </div>
 
-      <!-- Project 5: Patio de Luces 2 -->
+      <!-- Gallery Item 5 -->
       <div
-        class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
       >
-        <div class="aspect-w-16 aspect-h-12 relative">
-          <img
-            src="/img/patio_luces_2.webp"
-            alt="Limpieza profesional de patio de luces"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
+        <img
+          src="/img/patio_luces_2.webp"
+          alt="Limpieza profesional de patio de luces"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
         <div
-          class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
         >
-          <div class="text-center text-white p-6">
-            <h3 class="text-xl font-bold mb-2">Limpieza Profesional</h3>
-            <p class="text-sm mb-4">Resultados impecables garantizados</p>
-            <span
-              class="inline-block bg-secondary text-white px-4 py-2 rounded text-sm font-semibold"
-            >
-              Ver Detalles
-            </span>
-          </div>
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
         </div>
       </div>
 
-      <!-- Project 6: Red de Seguridad 2 -->
+      <!-- Gallery Item 6 -->
       <div
-        class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
       >
-        <div class="aspect-w-16 aspect-h-12 relative">
-          <img
-            src="/img/red_seguridad_2.webp"
-            alt="Sistema de protección antiaves instalado"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
+        <img
+          src="/img/red_seguridad_2.webp"
+          alt="Sistema de protección antiaves instalado"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
         <div
-          class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
         >
-          <div class="text-center text-white p-6">
-            <h3 class="text-xl font-bold mb-2">Protección Antiaves</h3>
-            <p class="text-sm mb-4">Soluciones duraderas y estéticas</p>
-            <span
-              class="inline-block bg-secondary text-white px-4 py-2 rounded text-sm font-semibold"
-            >
-              Ver Detalles
-            </span>
-          </div>
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
+      >
+        <img
+          src="/img/patio_luces_3.webp"
+          alt="Limpieza de patio de luces - Proyecto 3"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
+        <div
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
+        >
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div
+        class="gallery-item group cursor-pointer relative aspect-square overflow-hidden rounded-lg bg-gray-100"
+      >
+        <img
+          src="/img/reaparacion_fach_2.webp"
+          alt="Reparación de fachada - Proyecto 2"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          loading="lazy"
+        />
+        <div
+          class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center"
+        >
+          <svg
+            class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+            ></path>
+          </svg>
         </div>
       </div>
     </div>
@@ -186,33 +256,82 @@
         href="#contacto"
         class="inline-block bg-primary text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
       >
-        Ver Nuestro Portafolio Completo
+        Solicitar Presupuesto
       </a>
     </div>
   </div>
 </section>
 
+<!-- Gallery Modal -->
+<div
+  id="gallery-modal"
+  class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4"
+>
+  <!-- Close Button -->
+  <button
+    id="close-modal"
+    class="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+    aria-label="Cerrar modal"
+  >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </button>
+
+  <!-- Image Container -->
+  <div class="relative w-full h-full flex items-center justify-center">
+    <img
+      id="modal-image"
+      src=""
+      alt=""
+      class="max-w-full max-h-full object-contain"
+    />
+  </div>
+
+  <!-- Image Info -->
+  <div
+    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6"
+  >
+    <h3 id="modal-title" class="text-xl font-bold text-white mb-2"></h3>
+    <p id="modal-description" class="text-gray-200 text-sm"></p>
+  </div>
+</div>
+
 <style>
-  .aspect-w-16 {
-    position: relative;
-    padding-bottom: 75%; /* 12/16 = 0.75 */
-  }
-
-  .aspect-h-12 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .project-card img {
+  .gallery-item img {
     transition: transform 0.3s ease;
   }
 
-  .project-card:hover img {
-    transform: scale(1.05);
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  #gallery-modal {
+    backdrop-filter: blur(4px);
+  }
+
+  #gallery-modal.show {
+    display: flex !important;
+  }
+
+  #modal-image {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 </style>
+
+<script src="/src/scripts/gallery-modal.js"></script>
