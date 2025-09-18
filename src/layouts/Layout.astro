@@ -1,4 +1,6 @@
 ---
+import data from "../data.json";
+
 export interface Props {
   title: string;
   description?: string;
@@ -8,6 +10,8 @@ const {
   title,
   description = "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios. De Calpe a Alicante con total seguridad.",
 } = Astro.props;
+
+const { contacto } = data;
 ---
 
 <!doctype html>
@@ -88,7 +92,7 @@ const {
       "name": "Bravo Trabajos Verticales",
       "description": "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios",
       "url": "https://bravotrabajosverticales.com",
-      "telephone": "+34-XXX-XXX-XXX",
+      "telephone": {contacto.telefono_principal},
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Dirección de la empresa",

@@ -1,5 +1,10 @@
 ---
 // Conversion Block / Mid-Page CTA
+
+import data from "../data.json";
+
+const { contacto } = data;
+
 ---
 
 <section class="bg-primary py-16">
@@ -30,10 +35,10 @@
     <div class="text-center">
       <p class="text-white mb-2">¿Prefieres llamar?</p>
       <a
-        href="tel:+34-XXX-XXX-XXX"
+        href={`tel:${contacto.telefono}`}
         class="text-white underline hover:text-secondary transition-colors text-lg font-medium"
       >
-        +34 XXX XXX XXX
+        {contacto.telefono}
       </a>
     </div>
 
