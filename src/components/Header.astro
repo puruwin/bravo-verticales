@@ -3,12 +3,17 @@ import data from "../data.json";
 
 const { empresa } = data;
 
-// Check if we're on the privacy policy page
-const isPrivacyPage = Astro.url.pathname === "/politica-de-privacidad";
+export interface Props {
+  hideNavLinks?: boolean;
+}
+
+const { hideNavLinks = false } = Astro.props as Props;
 ---
 
 <header class="bg-white shadow-lg sticky top-0 z-50">
-  <nav class={`${isPrivacyPage ? 'max-w-4xl' : 'max-w-6xl'} mx-auto px-4 sm:px-6 lg:px-8`}>
+  <nav
+    class={`${hideNavLinks ? "max-w-4xl" : "max-w-6xl"} mx-auto px-4 sm:px-6 lg:px-8`}
+  >
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
@@ -21,7 +26,7 @@ const isPrivacyPage = Astro.url.pathname === "/politica-de-privacidad";
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-8">
           {
-            !isPrivacyPage && (
+            !hideNavLinks && (
               <>
                 <a
                   href="#servicios"
@@ -93,7 +98,7 @@ const isPrivacyPage = Astro.url.pathname === "/politica-de-privacidad";
     <div class="md:hidden hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
         {
-          !isPrivacyPage && (
+          !hideNavLinks && (
             <>
               <a
                 href="#servicios"
