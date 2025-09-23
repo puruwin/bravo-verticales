@@ -2,10 +2,13 @@
 import data from "../data.json";
 
 const { empresa } = data;
+
+// Check if we're on the privacy policy page
+const isPrivacyPage = Astro.url.pathname === "/politica-de-privacidad";
 ---
 
 <header class="bg-white shadow-lg sticky top-0 z-50">
-  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <nav class={`${isPrivacyPage ? 'max-w-4xl' : 'max-w-6xl'} mx-auto px-4 sm:px-6 lg:px-8`}>
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
@@ -17,30 +20,36 @@ const { empresa } = data;
       <!-- Desktop Navigation -->
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-8">
-          <a
-            href="#servicios"
-            class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-          >
-            Servicios
-          </a>
-          <a
-            href="#proyectos"
-            class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-          >
-            Proyectos
-          </a>
-          <a
-            href="#nosotros"
-            class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-          >
-            Nosotros
-          </a>
-          <a
-            href="#contacto"
-            class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-          >
-            Contacto
-          </a>
+          {
+            !isPrivacyPage && (
+              <>
+                <a
+                  href="#servicios"
+                  class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                >
+                  Servicios
+                </a>
+                <a
+                  href="#proyectos"
+                  class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                >
+                  Proyectos
+                </a>
+                <a
+                  href="#nosotros"
+                  class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                >
+                  Nosotros
+                </a>
+                <a
+                  href="#contacto"
+                  class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                >
+                  Contacto
+                </a>
+              </>
+            )
+          }
           <button
             id="header-cta-desktop"
             class="bg-secondary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-yellow-500 transition-colors"
@@ -83,30 +92,36 @@ const { empresa } = data;
     <!-- Mobile menu -->
     <div class="md:hidden hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-        <a
-          href="#servicios"
-          class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
-        >
-          Servicios
-        </a>
-        <a
-          href="#proyectos"
-          class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
-        >
-          Proyectos
-        </a>
-        <a
-          href="#nosotros"
-          class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
-        >
-          Nosotros
-        </a>
-        <a
-          href="#contacto"
-          class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
-        >
-          Contacto
-        </a>
+        {
+          !isPrivacyPage && (
+            <>
+              <a
+                href="#servicios"
+                class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
+              >
+                Servicios
+              </a>
+              <a
+                href="#proyectos"
+                class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
+              >
+                Proyectos
+              </a>
+              <a
+                href="#nosotros"
+                class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
+              >
+                Nosotros
+              </a>
+              <a
+                href="#contacto"
+                class="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium"
+              >
+                Contacto
+              </a>
+            </>
+          )
+        }
         <button
           id="header-cta-mobile"
           class="bg-secondary text-white block px-3 py-2 text-base font-medium rounded-md w-full text-left"
