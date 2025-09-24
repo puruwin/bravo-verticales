@@ -1,0 +1,17 @@
+# Bravo Trabajos Verticales - Trabajos Verticales con Cuerda en la Costa Blanca
+
+# TEAM
+    Bravo Trabajos Verticales
+    Contact: info@bravotrabajosverticales.es
+    From: Costa Blanca, Alicante, España
+
+# THANKS
+    Astro Framework
+    Tailwind CSS
+    Google Fonts
+
+# SITE
+    Last update: 2025/09/24
+    Language: Spanish
+    Doctype: HTML5
+    IDE: Cursor

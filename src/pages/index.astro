@@ -11,12 +11,14 @@ import ProjectsGallery from "../components/ProjectsGallery.astro";
 import ContactSection from "../components/ContactSection.astro";
 import ContactModal from "../components/ContactModal.astro";
 import Footer from "../components/Footer.astro";
+import LocalSEO from "../components/LocalSEO.astro";
 import data from "../data.json";
 
 const { empresa } = data;
 ---
 
 <Layout title={empresa.titulo_completo}>
+	<LocalSEO />
 	<Header />
 	<main>
 		<HeroSection />

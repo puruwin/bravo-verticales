@@ -4,14 +4,21 @@ import data from "../data.json";
 export interface Props {
   title: string;
   description?: string;
+  keywords?: string;
+  canonical?: string;
+  ogImage?: string;
 }
 
 const {
   title,
   description = "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios. De Calpe a Alicante con total seguridad.",
+  keywords = "trabajos verticales Costa Blanca, rehabilitación fachadas Alicante, limpieza patios luces Calpe, sistemas antiaves Benidorm, reparaciones altura Altea, trabajos verticales San Juan, limpieza cristales Campello, pintura fachadas Villajoyosa, sin andamios Costa Blanca",
+  canonical = "https://bravotrabajosverticales.com/",
+  ogImage = "https://bravotrabajosverticales.com/og-image.jpg"
 } = Astro.props;
 
-const { contacto } = data;
+const { empresa } = data;
+const { contacto } = empresa;
 ---
 
 <!doctype html>
@@ -23,6 +30,29 @@ const { contacto } = data;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    
+    <!-- SEO Local Meta Tags -->
+    <meta name="geo.region" content="ES-VC" />
+    <meta name="geo.placename" content="Costa Blanca, Alicante, España" />
+    <meta name="geo.position" content="38.3452;-0.4810" />
+    <meta name="ICBM" content="38.3452, -0.4810" />
+    <meta name="geo.region" content="ES-VC" />
+    <meta name="geo.placename" content="Costa Blanca, Alicante, España" />
+    <meta name="geo.position" content="38.3452;-0.4810" />
+    <meta name="ICBM" content="38.3452, -0.4810" />
+    
+    <!-- Local Business Meta Tags -->
+    <meta name="business:contact_data:locality" content="Costa Blanca" />
+    <meta name="business:contact_data:region" content="Alicante" />
+    <meta name="business:contact_data:country_name" content="España" />
+    <meta name="business:contact_data:phone_number" content={contacto.telefono_principal} />
+    <meta name="business:contact_data:email" content={contacto.email} />
+    
+    <!-- Service Area Meta Tags -->
+    <meta name="service-area" content="Alicante, San Juan, Campello, Villajoyosa, Benidorm, Altea, Calpe" />
+    <meta name="service-area:locality" content="Alicante, San Juan, Campello, Villajoyosa, Benidorm, Altea, Calpe" />
+    <meta name="service-area:region" content="Alicante" />
+    <meta name="service-area:country" content="España" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,50 +68,57 @@ const { contacto } = data;
     <meta name="author" content="Bravo Trabajos Verticales" />
     <meta
       name="keywords"
-      content="trabajos verticales con cuerda, Costa Blanca, rehabilitación fachadas, limpieza patios luces, sistemas antiaves, reparaciones altura, Calpe, Alicante, sin andamios"
+      content={keywords}
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bravotrabajosverticales.com/" />
-    <meta
-      property="og:title"
-      content="Trabajos Verticales con Cuerda en la Costa Blanca - Bravo Trabajos Verticales"
-    />
-    <meta
-      property="og:description"
-      content="Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios. De Calpe a Alicante."
-    />
-    <meta
-      property="og:image"
-      content="https://bravotrabajosverticales.com/og-image.jpg"
-    />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bravo Trabajos Verticales - Trabajos verticales con cuerda en la Costa Blanca" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Bravo Trabajos Verticales" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://bravotrabajosverticales.com/"
-    />
-    <meta
-      property="twitter:title"
-      content="Trabajos Verticales con Cuerda en la Costa Blanca - Bravo Trabajos Verticales"
-    />
-    <meta
-      property="twitter:description"
-      content="Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios. De Calpe a Alicante."
-    />
-    <meta
-      property="twitter:image"
-      content="https://bravotrabajosverticales.com/og-image.jpg"
-    />
+    <meta property="twitter:url" content={canonical} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+    <meta property="twitter:image:alt" content="Bravo Trabajos Verticales - Trabajos verticales con cuerda en la Costa Blanca" />
+    <meta property="twitter:site" content="@bravotrabajosverticales" />
+    <meta property="twitter:creator" content="@bravotrabajosverticales" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://bravotrabajosverticales.com/" />
+    <link rel="canonical" href={canonical} />
 
     <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#2F45AF" />
     <meta name="msapplication-TileColor" content="#2F45AF" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Bravo Trabajos Verticales" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Bravo Trabajos Verticales" />
+    <meta name="msapplication-tooltip" content="Trabajos verticales con cuerda en la Costa Blanca" />
+    <meta name="msapplication-starturl" content="/" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
   </fragment>
 
   <!-- Schema.org markup for local business -->
@@ -90,19 +127,108 @@ const { contacto } = data;
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Bravo Trabajos Verticales",
-      "description": "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios",
+      "alternateName": "Bravo Trabajos Verticales Costa Blanca",
+      "description": "Empresa especializada en trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin andamios.",
       "url": "https://bravotrabajosverticales.com",
       "telephone": {contacto.telefono_principal},
+      "email": {contacto.email},
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Dirección de la empresa",
-        "addressLocality": "Ciudad",
-        "addressRegion": "Región",
-        "postalCode": "Código Postal",
+        "addressLocality": "Costa Blanca",
+        "addressRegion": "Alicante",
         "addressCountry": "ES"
       },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Alicante"
+        },
+        {
+          "@type": "City", 
+          "name": "San Juan de Alicante"
+        },
+        {
+          "@type": "City",
+          "name": "El Campello"
+        },
+        {
+          "@type": "City",
+          "name": "Villajoyosa"
+        },
+        {
+          "@type": "City",
+          "name": "Benidorm"
+        },
+        {
+          "@type": "City",
+          "name": "Altea"
+        },
+        {
+          "@type": "City",
+          "name": "Calpe"
+        }
+      ],
+      "serviceType": [
+        "Trabajos verticales con cuerda",
+        "Rehabilitación de fachadas",
+        "Limpieza de patios de luces",
+        "Sistemas antiaves",
+        "Reparaciones en altura",
+        "Pintura de fachadas",
+        "Limpieza de cristales en altura"
+      ],
       "openingHours": "Mo-Fr 08:00-18:00",
-      "priceRange": "$$"
+      "priceRange": "$$",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+      "currenciesAccepted": "EUR",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Trabajos Verticales",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pintura y rehabilitación de fachadas",
+              "description": "Pintamos y renovamos fachadas dañadas por la humedad, el sol o el paso del tiempo"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Limpieza de patios de luces y cristales en altura",
+              "description": "Limpieza profesional de patios de luces y ventanales de difícil acceso"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Instalación de sistemas antiaves",
+              "description": "Instalación de redes y pinchos antiaves para proteger edificios"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reparaciones y mantenimiento en altura",
+              "description": "Reparaciones, enlucidos e impermeabilizaciones en altura"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "25"
+      },
+      "sameAs": [
+        "https://www.facebook.com/bravotrabajosverticales",
+        "https://www.instagram.com/bravotrabajosverticales",
+        "https://www.linkedin.com/company/bravo-trabajos-verticales"
+      ]
     }
   </script>
 

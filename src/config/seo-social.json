@@ -1,0 +1,49 @@
+{
+  "open_graph": {
+    "type": "website",
+    "locale": "es_ES",
+    "site_name": "Bravo Trabajos Verticales",
+    "title": "Trabajos Verticales con Cuerda en la Costa Blanca - Bravo Trabajos Verticales",
+    "description": "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios. De Calpe a Alicante con total seguridad.",
+    "image": {
+      "url": "https://bravotrabajosverticales.com/og-image.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "Bravo Trabajos Verticales - Trabajos verticales con cuerda en la Costa Blanca"
+    }
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@bravotrabajosverticales",
+    "creator": "@bravotrabajosverticales",
+    "title": "Trabajos Verticales con Cuerda en la Costa Blanca - Bravo Trabajos Verticales",
+    "description": "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios. De Calpe a Alicante con total seguridad.",
+    "image": "https://bravotrabajosverticales.com/og-image.jpg"
+  },
+  "facebook": {
+    "app_id": "YOUR_FACEBOOK_APP_ID",
+    "page_id": "YOUR_FACEBOOK_PAGE_ID",
+    "admins": "YOUR_FACEBOOK_ADMIN_ID"
+  },
+  "linkedin": {
+    "company_id": "YOUR_LINKEDIN_COMPANY_ID",
+    "profile_url": "https://www.linkedin.com/company/bravo-trabajos-verticales"
+  },
+  "whatsapp": {
+    "business_number": "+34604802250",
+    "message_template": "Hola, me interesa solicitar información sobre trabajos verticales en la Costa Blanca."
+  },
+  "sharing": {
+    "url": "https://bravotrabajosverticales.com/",
+    "title": "Trabajos Verticales con Cuerda en la Costa Blanca - Bravo Trabajos Verticales",
+    "description": "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios.",
+    "hashtags": [
+      "#TrabajosVerticales",
+      "#CostaBlanca",
+      "#Alicante",
+      "#Benidorm",
+      "#Calpe",
+      "#SinAndamios"
+    ]
+  }
+}

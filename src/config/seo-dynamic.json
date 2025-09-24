@@ -1,0 +1,41 @@
+{
+  "content_templates": {
+    "municipio_landing": {
+      "title": "Trabajos Verticales con Cuerda en {municipio} - Bravo Trabajos Verticales",
+      "description": "Servicios de trabajos verticales con cuerda en {municipio}. Rehabilitación de fachadas, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin andamios en {municipio}.",
+      "h1": "Trabajos Verticales con Cuerda en {municipio}",
+      "h2": "Servicios de Trabajos Verticales en {municipio}",
+      "content": "En Bravo Trabajos Verticales ofrecemos servicios profesionales de trabajos verticales con cuerda en {municipio}. Nuestros servicios incluyen rehabilitación de fachadas, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin necesidad de andamios. Atendemos en toda la zona de {municipio} con la máxima seguridad y profesionalidad."
+    },
+    "servicio_landing": {
+      "title": "{servicio} en {municipio} - Bravo Trabajos Verticales",
+      "description": "Servicios de {servicio} en {municipio}. Especialistas en trabajos verticales con cuerda sin andamios en {municipio}. Presupuestos gratuitos.",
+      "h1": "{servicio} en {municipio}",
+      "h2": "Especialistas en {servicio} con Cuerda",
+      "content": "Ofrecemos servicios profesionales de {servicio} en {municipio} utilizando técnicas de trabajos verticales con cuerda. Sin andamios, más rápido y económico. Presupuestos gratuitos en {municipio}."
+    }
+  },
+  "dynamic_keywords": {
+    "municipio_servicio": "{municipio} {servicio}",
+    "servicio_municipio": "{servicio} en {municipio}",
+    "trabajos_verticales_municipio": "trabajos verticales {municipio}",
+    "sin_andamios_municipio": "sin andamios {municipio}",
+    "presupuesto_municipio": "presupuesto {municipio}",
+    "empresa_municipio": "empresa {municipio}"
+  },
+  "content_blocks": {
+    "introduccion": "Bravo Trabajos Verticales es una empresa especializada en trabajos verticales con cuerda en la Costa Blanca. Ofrecemos servicios profesionales de rehabilitación de fachadas, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin necesidad de andamios.",
+    "ventajas": "Los trabajos verticales con cuerda ofrecen múltiples ventajas: son más rápidos que los andamios tradicionales, más económicos, causan menos molestias a los vecinos y permiten acceder a zonas de difícil acceso.",
+    "servicios": "Nuestros servicios incluyen rehabilitación de fachadas, limpieza de patios de luces y cristales en altura, instalación de sistemas antiaves, pintura de fachadas, reparaciones en altura y mantenimiento de edificios.",
+    "zona_actuacion": "Atendemos en toda la Costa Blanca: Alicante, San Juan de Alicante, El Campello, Villajoyosa, Benidorm, Altea y Calpe. Conocemos las particularidades de cada municipio y las condiciones climáticas de la zona.",
+    "seguridad": "Todos nuestros trabajos se realizan con equipos homologados y siguiendo estrictos protocolos de seguridad. Nuestro equipo está formado por profesionales certificados en trabajos verticales.",
+    "contacto": "Ofrecemos presupuestos gratuitos para todos nuestros servicios. Contacta con nosotros para solicitar información sobre trabajos verticales en tu municipio de la Costa Blanca."
+  },
+  "call_to_actions": {
+    "presupuesto": "Solicitar Presupuesto Gratuito",
+    "contacto": "Contactar Ahora",
+    "llamar": "Llamar Ahora",
+    "whatsapp": "Enviar WhatsApp",
+    "email": "Enviar Email"
+  }
+}

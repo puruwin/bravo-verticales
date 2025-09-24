@@ -1,0 +1,59 @@
+{
+  "core_web_vitals": {
+    "lcp_target": "< 2.5s",
+    "fid_target": "< 100ms",
+    "cls_target": "< 0.1"
+  },
+  "optimizaciones": {
+    "imagenes": {
+      "formato_preferido": "WebP",
+      "formato_fallback": "JPEG",
+      "calidad": 85,
+      "lazy_loading": true,
+      "sizes": "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    },
+    "fuentes": {
+      "preload": true,
+      "display": "swap",
+      "fallback": "system-ui, -apple-system, sans-serif"
+    },
+    "css": {
+      "critical_css": true,
+      "minification": true,
+      "purge_unused": true
+    },
+    "javascript": {
+      "minification": true,
+      "tree_shaking": true,
+      "code_splitting": true
+    }
+  },
+  "caching": {
+    "static_assets": "1 year",
+    "html": "1 hour",
+    "api_responses": "5 minutes"
+  },
+  "compression": {
+    "gzip": true,
+    "brotli": true,
+    "minification": true
+  },
+  "preloading": {
+    "critical_resources": [
+      "/favicon.svg",
+      "/og-image.jpg"
+    ],
+    "preconnect_domains": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com",
+      "https://www.google-analytics.com",
+      "https://www.googletagmanager.com"
+    ]
+  },
+  "monitoring": {
+    "google_analytics": true,
+    "google_search_console": true,
+    "core_web_vitals": true,
+    "lighthouse": true
+  }
+}

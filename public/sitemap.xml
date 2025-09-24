@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Página principal -->
+  <url>
+    <loc>https://bravotrabajosverticales.es</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bravotrabajosverticales.es/og-image.jpg</image:loc>
+      <image:title>Bravo Trabajos Verticales - Trabajos verticales con cuerda en la Costa Blanca</image:title>
+      <image:caption>Empresa especializada en trabajos verticales con cuerda en Alicante, Benidorm, Calpe y toda la Costa Blanca</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Página de política de privacidad -->
+  <url>
+    <loc>https://bravotrabajosverticales.es/politica-de-privacidad</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Páginas específicas por municipio (para futuras implementaciones) -->
+  <!-- <url>
+    <loc>https://bravotrabajosverticales.es/trabajos-verticales-alicante</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://bravotrabajosverticales.es/trabajos-verticales-benidorm</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://bravotrabajosverticales.es/trabajos-verticales-calpe</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://bravotrabajosverticales.es/trabajos-verticales-altea</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://bravotrabajosverticales.es/trabajos-verticales-san-juan-alicante</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://bravotrabajosverticales.es/trabajos-verticales-campello</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://bravotrabajosverticales.es/trabajos-verticales-villajoyosa</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  
+</urlset>

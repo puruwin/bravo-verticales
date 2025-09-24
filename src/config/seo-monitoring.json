@@ -1,0 +1,43 @@
+{
+  "google_search_console": {
+    "verification_file": "google-site-verification.html",
+    "sitemap_url": "https://bravotrabajosverticales.com/sitemap.xml",
+    "robots_txt": "https://bravotrabajosverticales.com/robots.txt"
+  },
+  "analytics_disabled": {
+    "note": "Google Analytics y Google Tag Manager deshabilitados por solicitud del usuario",
+    "alternative_tracking": "Se puede implementar en el futuro si es necesario",
+    "current_focus": "SEO local y optimización de contenido"
+  },
+  "facebook_pixel": {
+    "pixel_id": "YOUR_FACEBOOK_PIXEL_ID",
+    "events": {
+      "page_view": "PageView",
+      "contact": "Contact",
+      "lead": "Lead",
+      "purchase": "Purchase"
+    }
+  },
+  "linkedin_insight": {
+    "partner_id": "YOUR_LINKEDIN_PARTNER_ID",
+    "events": {
+      "page_view": "PageView",
+      "contact": "Contact",
+      "lead": "Lead"
+    }
+  },
+  "monitoring_tools": {
+    "google_lighthouse": true,
+    "google_page_speed": true,
+    "core_web_vitals": true,
+    "mobile_friendly": true,
+    "structured_data": true
+  },
+  "alerts": {
+    "core_web_vitals_degradation": true,
+    "mobile_friendly_issues": true,
+    "structured_data_errors": true,
+    "sitemap_errors": true,
+    "robots_txt_issues": true
+  }
+}

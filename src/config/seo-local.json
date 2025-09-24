@@ -1,0 +1,175 @@
+{
+  "municipios": {
+    "alicante": {
+      "nombre": "Alicante",
+      "nombre_completo": "Alicante Ciudad",
+      "codigo_postal": "03001-03016",
+      "poblacion": "337482",
+      "keywords": [
+        "trabajos verticales Alicante",
+        "rehabilitación fachadas Alicante",
+        "limpieza patios luces Alicante",
+        "sistemas antiaves Alicante",
+        "pintura fachadas Alicante",
+        "reparaciones altura Alicante",
+        "trabajos verticales con cuerda Alicante",
+        "sin andamios Alicante"
+      ],
+      "descripcion": "Servicios de trabajos verticales con cuerda en Alicante. Rehabilitación de fachadas, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin andamios en la ciudad de Alicante.",
+      "coordenadas": {
+        "latitud": 38.3452,
+        "longitud": -0.4810
+      }
+    },
+    "benidorm": {
+      "nombre": "Benidorm",
+      "nombre_completo": "Benidorm",
+      "codigo_postal": "03501-03503",
+      "poblacion": "70000",
+      "keywords": [
+        "trabajos verticales Benidorm",
+        "rehabilitación fachadas Benidorm",
+        "limpieza cristales altura Benidorm",
+        "sistemas antiaves Benidorm",
+        "pintura fachadas Benidorm",
+        "reparaciones altura Benidorm",
+        "trabajos verticales con cuerda Benidorm",
+        "sin andamios Benidorm"
+      ],
+      "descripcion": "Servicios de trabajos verticales con cuerda en Benidorm. Rehabilitación de fachadas de hoteles, limpieza de cristales en altura, sistemas antiaves y reparaciones sin andamios en Benidorm.",
+      "coordenadas": {
+        "latitud": 38.5411,
+        "longitud": -0.1229
+      }
+    },
+    "calpe": {
+      "nombre": "Calpe",
+      "nombre_completo": "Calpe",
+      "codigo_postal": "03710",
+      "poblacion": "22000",
+      "keywords": [
+        "trabajos verticales Calpe",
+        "rehabilitación fachadas Calpe",
+        "limpieza patios luces Calpe",
+        "sistemas antiaves Calpe",
+        "pintura fachadas Calpe",
+        "reparaciones altura Calpe",
+        "trabajos verticales con cuerda Calpe",
+        "sin andamios Calpe"
+      ],
+      "descripcion": "Servicios de trabajos verticales con cuerda en Calpe. Rehabilitación de fachadas costeras, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin andamios en Calpe.",
+      "coordenadas": {
+        "latitud": 38.6447,
+        "longitud": 0.0456
+      }
+    },
+    "altea": {
+      "nombre": "Altea",
+      "nombre_completo": "Altea",
+      "codigo_postal": "03590",
+      "poblacion": "23000",
+      "keywords": [
+        "trabajos verticales Altea",
+        "rehabilitación fachadas Altea",
+        "limpieza cristales altura Altea",
+        "sistemas antiaves Altea",
+        "pintura fachadas Altea",
+        "reparaciones altura Altea",
+        "trabajos verticales con cuerda Altea",
+        "sin andamios Altea"
+      ],
+      "descripcion": "Servicios de trabajos verticales con cuerda en Altea. Rehabilitación de fachadas históricas, limpieza de cristales en altura, sistemas antiaves y reparaciones sin andamios en Altea.",
+      "coordenadas": {
+        "latitud": 38.5989,
+        "longitud": -0.0517
+      }
+    },
+    "san_juan": {
+      "nombre": "San Juan de Alicante",
+      "nombre_completo": "San Juan de Alicante",
+      "codigo_postal": "03550",
+      "poblacion": "24000",
+      "keywords": [
+        "trabajos verticales San Juan Alicante",
+        "rehabilitación fachadas San Juan",
+        "limpieza cristales altura San Juan",
+        "sistemas antiaves San Juan",
+        "pintura fachadas San Juan",
+        "reparaciones altura San Juan",
+        "trabajos verticales con cuerda San Juan",
+        "sin andamios San Juan"
+      ],
+      "descripcion": "Servicios de trabajos verticales con cuerda en San Juan de Alicante. Rehabilitación de fachadas residenciales, limpieza de cristales en altura, sistemas antiaves y reparaciones sin andamios en San Juan.",
+      "coordenadas": {
+        "latitud": 38.4014,
+        "longitud": -0.4356
+      }
+    },
+    "campello": {
+      "nombre": "El Campello",
+      "nombre_completo": "El Campello",
+      "codigo_postal": "03560",
+      "poblacion": "29000",
+      "keywords": [
+        "trabajos verticales Campello",
+        "rehabilitación fachadas Campello",
+        "limpieza patios luces Campello",
+        "sistemas antiaves Campello",
+        "pintura fachadas Campello",
+        "reparaciones altura Campello",
+        "trabajos verticales con cuerda Campello",
+        "sin andamios Campello"
+      ],
+      "descripcion": "Servicios de trabajos verticales con cuerda en El Campello. Rehabilitación de fachadas costeras, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin andamios en El Campello.",
+      "coordenadas": {
+        "latitud": 38.4289,
+        "longitud": -0.4011
+      }
+    },
+    "villajoyosa": {
+      "nombre": "Villajoyosa",
+      "nombre_completo": "Villajoyosa",
+      "codigo_postal": "03570",
+      "poblacion": "35000",
+      "keywords": [
+        "trabajos verticales Villajoyosa",
+        "rehabilitación fachadas Villajoyosa",
+        "limpieza patios luces Villajoyosa",
+        "sistemas antiaves Villajoyosa",
+        "pintura fachadas Villajoyosa",
+        "reparaciones altura Villajoyosa",
+        "trabajos verticales con cuerda Villajoyosa",
+        "sin andamios Villajoyosa"
+      ],
+      "descripcion": "Servicios de trabajos verticales con cuerda en Villajoyosa. Rehabilitación de fachadas, limpieza de patios de luces, sistemas antiaves y reparaciones en altura sin andamios en Villajoyosa.",
+      "coordenadas": {
+        "latitud": 38.5089,
+        "longitud": -0.2333
+      }
+    }
+  },
+  "keywords_generales": [
+    "trabajos verticales Costa Blanca",
+    "trabajos verticales con cuerda Costa Blanca",
+    "rehabilitación fachadas Costa Blanca",
+    "limpieza patios luces Costa Blanca",
+    "sistemas antiaves Costa Blanca",
+    "pintura fachadas Costa Blanca",
+    "reparaciones altura Costa Blanca",
+    "sin andamios Costa Blanca",
+    "trabajos verticales Alicante provincia",
+    "empresa trabajos verticales Costa Blanca",
+    "presupuesto trabajos verticales Costa Blanca",
+    "trabajos verticales baratos Costa Blanca"
+  ],
+  "servicios_principales": [
+    "Rehabilitación de fachadas",
+    "Limpieza de patios de luces",
+    "Sistemas antiaves",
+    "Pintura de fachadas",
+    "Limpieza de cristales en altura",
+    "Reparaciones en altura",
+    "Mantenimiento en altura",
+    "Impermeabilizaciones"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "contenido_municipio_especifico": {
+    "alicante": {
+      "introduccion": "En Alicante ciudad ofrecemos servicios de trabajos verticales con cuerda para rehabilitación de fachadas, limpieza de patios de luces y sistemas antiaves. Conocemos las particularidades del centro histórico y los barrios residenciales de la ciudad.",
+      "servicios_especificos": "Rehabilitación de fachadas en el centro histórico, limpieza de patios de luces en edificios residenciales, sistemas antiaves en edificios comerciales, pintura de fachadas en urbanizaciones, limpieza de cristales en altura en edificios de oficinas.",
+      "ventajas_locales": "Al estar ubicados en Alicante, podemos atender con rapidez cualquier trabajo en la ciudad. Conocemos las particularidades del clima mediterráneo y las condiciones específicas de cada barrio.",
+      "testimonios_locales": "Nuestros clientes en Alicante valoran especialmente la rapidez de nuestros servicios, la ausencia de molestias y el ahorro económico que supone trabajar sin andamios en el centro histórico y las urbanizaciones residenciales."
+    },
+    "benidorm": {
+      "introduccion": "En Benidorm ofrecemos servicios especializados para el sector turístico: limpieza de cristales en altura en hoteles, rehabilitación de fachadas de edificios turísticos, sistemas antiaves en complejos hoteleros y mantenimiento en altura de edificios costeros.",
+      "servicios_especificos": "Limpieza de cristales en altura en hoteles y edificios turísticos, rehabilitación de fachadas de complejos hoteleros, sistemas antiaves en edificios turísticos, pintura de fachadas en edificios costeros, reparaciones en altura en edificios turísticos.",
+      "ventajas_locales": "Conocemos las particularidades del sector turístico de Benidorm y las necesidades específicas de hoteles y edificios turísticos. Trabajamos con horarios flexibles para minimizar molestias a los huéspedes.",
+      "testimonios_locales": "Nuestros clientes en Benidorm, especialmente hoteles y complejos turísticos, valoran la rapidez de nuestros servicios y la ausencia de molestias para los huéspedes durante la temporada alta."
+    },
+    "calpe": {
+      "introduccion": "En Calpe ofrecemos servicios de trabajos verticales con cuerda para rehabilitación de fachadas costeras, limpieza de patios de luces en edificios residenciales y sistemas antiaves en edificios costeros. Conocemos las particularidades del clima costero.",
+      "servicios_especificos": "Rehabilitación de fachadas costeras, limpieza de patios de luces en edificios residenciales, sistemas antiaves en edificios costeros, pintura de fachadas en edificios costeros, limpieza de cristales en altura en edificios costeros.",
+      "ventajas_locales": "Conocemos las particularidades del clima costero de Calpe y las condiciones específicas de los edificios expuestos al mar. Utilizamos materiales y tratamientos específicos para la humedad marina.",
+      "testimonios_locales": "Nuestros clientes en Calpe valoran especialmente el conocimiento que tenemos del clima costero y los materiales específicos que utilizamos para proteger las fachadas de la humedad marina."
+    },
+    "altea": {
+      "introduccion": "En Altea ofrecemos servicios de trabajos verticales con cuerda para rehabilitación de fachadas históricas, limpieza de cristales en altura en edificios históricos y sistemas antiaves en edificios del casco antiguo. Conocemos las particularidades del patrimonio histórico.",
+      "servicios_especificos": "Rehabilitación de fachadas históricas, limpieza de cristales en altura en edificios históricos, sistemas antiaves en edificios del casco antiguo, pintura de fachadas en edificios históricos, reparaciones en altura en edificios históricos.",
+      "ventajas_locales": "Conocemos las particularidades del patrimonio histórico de Altea y las necesidades específicas de los edificios históricos. Trabajamos con técnicas y materiales respetuosos con el patrimonio.",
+      "testimonios_locales": "Nuestros clientes en Altea valoran especialmente el respeto que mostramos por el patrimonio histórico y las técnicas específicas que utilizamos para trabajar en edificios históricos."
+    },
+    "san_juan": {
+      "introduccion": "En San Juan de Alicante ofrecemos servicios de trabajos verticales con cuerda para rehabilitación de fachadas en urbanizaciones residenciales, limpieza de cristales en altura en edificios residenciales y sistemas antiaves en edificios residenciales.",
+      "servicios_especificos": "Rehabilitación de fachadas en urbanizaciones residenciales, limpieza de cristales en altura en edificios residenciales, sistemas antiaves en edificios residenciales, pintura de fachadas en urbanizaciones, reparaciones en altura en edificios residenciales.",
+      "ventajas_locales": "Conocemos las particularidades de las urbanizaciones residenciales de San Juan y las necesidades específicas de los edificios residenciales. Trabajamos con horarios que minimizan molestias a los vecinos.",
+      "testimonios_locales": "Nuestros clientes en San Juan de Alicante valoran especialmente la rapidez de nuestros servicios y la ausencia de molestias para los vecinos en las urbanizaciones residenciales."
+    },
+    "campello": {
+      "introduccion": "En El Campello ofrecemos servicios de trabajos verticales con cuerda para rehabilitación de fachadas costeras, limpieza de patios de luces en edificios costeros y sistemas antiaves en edificios costeros. Conocemos las particularidades del clima costero.",
+      "servicios_especificos": "Rehabilitación de fachadas costeras, limpieza de patios de luces en edificios costeros, sistemas antiaves en edificios costeros, pintura de fachadas en edificios costeros, limpieza de cristales en altura en edificios costeros.",
+      "ventajas_locales": "Conocemos las particularidades del clima costero de El Campello y las condiciones específicas de los edificios expuestos al mar. Utilizamos materiales y tratamientos específicos para la humedad marina.",
+      "testimonios_locales": "Nuestros clientes en El Campello valoran especialmente el conocimiento que tenemos del clima costero y los materiales específicos que utilizamos para proteger las fachadas de la humedad marina."
+    },
+    "villajoyosa": {
+      "introduccion": "En Villajoyosa ofrecemos servicios de trabajos verticales con cuerda para rehabilitación de fachadas, limpieza de patios de luces en edificios residenciales y sistemas antiaves en edificios residenciales. Conocemos las particularidades del clima costero.",
+      "servicios_especificos": "Rehabilitación de fachadas, limpieza de patios de luces en edificios residenciales, sistemas antiaves en edificios residenciales, pintura de fachadas en edificios residenciales, limpieza de cristales en altura en edificios residenciales.",
+      "ventajas_locales": "Conocemos las particularidades del clima costero de Villajoyosa y las condiciones específicas de los edificios expuestos al mar. Utilizamos materiales y tratamientos específicos para la humedad marina.",
+      "testimonios_locales": "Nuestros clientes en Villajoyosa valoran especialmente el conocimiento que tenemos del clima costero y los materiales específicos que utilizamos para proteger las fachadas de la humedad marina."
+    }
+  }
+}

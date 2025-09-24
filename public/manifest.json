@@ -1,0 +1,60 @@
+{
+  "name": "Bravo Trabajos Verticales - Costa Blanca",
+  "short_name": "Bravo Trabajos Verticales",
+  "description": "Empresa de trabajos verticales con cuerda en la Costa Blanca. Rehabilitación de fachadas, limpieza y reparaciones sin andamios en Alicante, Benidorm, Calpe, Altea, San Juan, El Campello y Villajoyosa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2F45AF",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "construction",
+    "services"
+  ],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contacto",
+      "short_name": "Contacto",
+      "description": "Contacta con Bravo Trabajos Verticales",
+      "url": "/#contacto",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "Servicios",
+      "short_name": "Servicios",
+      "description": "Nuestros servicios de trabajos verticales",
+      "url": "/#servicios",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any"
+        }
+      ]
+    }
+  ]
+}

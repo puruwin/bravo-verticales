@@ -1,0 +1,120 @@
+{
+  "hreflang": {
+    "es": "https://bravotrabajosverticales.com/",
+    "es-ES": "https://bravotrabajosverticales.com/",
+    "x-default": "https://bravotrabajosverticales.com/"
+  },
+  "geo_targeting": {
+    "country": "ES",
+    "region": "Alicante",
+    "city": "Costa Blanca",
+    "coordinates": {
+      "latitude": 38.3452,
+      "longitude": -0.4810
+    }
+  },
+  "local_business": {
+    "name": "Bravo Trabajos Verticales",
+    "description": "Empresa de trabajos verticales con cuerda en la Costa Blanca",
+    "address": {
+      "street": "Costa Blanca",
+      "city": "Alicante",
+      "region": "Alicante",
+      "country": "España",
+      "postal_code": "03000"
+    },
+    "phone": "+34 604 802 250",
+    "email": "info@bravotrabajosverticales.com",
+    "website": "https://bravotrabajosverticales.com",
+    "hours": "Mo-Fr 08:00-18:00",
+    "price_range": "$$",
+    "payment_accepted": "Cash, Credit Card, Bank Transfer",
+    "currencies_accepted": "EUR"
+  },
+  "service_areas": [
+    {
+      "name": "Alicante",
+      "type": "City",
+      "coordinates": {
+        "latitude": 38.3452,
+        "longitude": -0.4810
+      }
+    },
+    {
+      "name": "San Juan de Alicante",
+      "type": "City",
+      "coordinates": {
+        "latitude": 38.4014,
+        "longitude": -0.4356
+      }
+    },
+    {
+      "name": "El Campello",
+      "type": "City",
+      "coordinates": {
+        "latitude": 38.4289,
+        "longitude": -0.4011
+      }
+    },
+    {
+      "name": "Villajoyosa",
+      "type": "City",
+      "coordinates": {
+        "latitude": 38.5089,
+        "longitude": -0.2333
+      }
+    },
+    {
+      "name": "Benidorm",
+      "type": "City",
+      "coordinates": {
+        "latitude": 38.5411,
+        "longitude": -0.1229
+      }
+    },
+    {
+      "name": "Altea",
+      "type": "City",
+      "coordinates": {
+        "latitude": 38.5989,
+        "longitude": -0.0517
+      }
+    },
+    {
+      "name": "Calpe",
+      "type": "City",
+      "coordinates": {
+        "latitude": 38.6447,
+        "longitude": 0.0456
+      }
+    }
+  ],
+  "local_keywords": {
+    "primary": [
+      "trabajos verticales Costa Blanca",
+      "trabajos verticales con cuerda Costa Blanca",
+      "rehabilitación fachadas Costa Blanca",
+      "limpieza patios luces Costa Blanca",
+      "sistemas antiaves Costa Blanca"
+    ],
+    "secondary": [
+      "trabajos verticales Alicante",
+      "trabajos verticales Benidorm",
+      "trabajos verticales Calpe",
+      "trabajos verticales Altea",
+      "trabajos verticales San Juan",
+      "trabajos verticales Campello",
+      "trabajos verticales Villajoyosa"
+    ],
+    "long_tail": [
+      "empresa trabajos verticales Costa Blanca",
+      "presupuesto trabajos verticales Alicante",
+      "trabajos verticales baratos Benidorm",
+      "rehabilitación fachadas sin andamios Calpe",
+      "limpieza patios luces Altea",
+      "sistemas antiaves San Juan",
+      "pintura fachadas Campello",
+      "reparaciones altura Villajoyosa"
+    ]
+  }
+}

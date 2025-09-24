@@ -9,16 +9,18 @@ const { empresa } = data;
     <!-- Section Header -->
     <div class="text-center mb-12">
       <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">
-        Nuestra Zona de Actuación
+        Trabajos Verticales en la Costa Blanca - Zona de Actuación
       </h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
         Atendemos con rapidez en toda {empresa.ubicacion.base}, desde {
           empresa.ubicacion.zona_actuacion[0]
         } hasta {
           empresa.ubicacion.zona_actuacion[
             empresa.ubicacion.zona_actuacion.length - 1
           ]
-        }
+        }. Especialistas en trabajos verticales con cuerda, rehabilitación de
+        fachadas, limpieza de patios de luces y sistemas antiaves en Alicante,
+        Benidorm, Calpe, Altea, San Juan, El Campello y Villajoyosa.
       </p>
     </div>
 
@@ -117,9 +119,14 @@ const { empresa } = data;
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary mb-2">Conocimiento Local</h4>
+            <h4 class="font-semibold text-primary mb-2">
+              Conocimiento Local de la Costa Blanca
+            </h4>
             <p class="text-gray-600 text-sm">
-              {empresa.ubicacion.descripcion_zona}
+              {empresa.ubicacion.descripcion_zona} Conocemos las particularidades
+              de cada municipio: el clima mediterráneo de Alicante, la humedad marina
+              de Benidorm, las condiciones específicas de Calpe, Altea, San Juan,
+              El Campello y Villajoyosa.
             </p>
           </div>
         </div>
@@ -143,11 +150,70 @@ const { empresa } = data;
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary mb-2">Respuesta Rápida</h4>
+            <h4 class="font-semibold text-primary mb-2">
+              Respuesta Rápida en Toda la Costa Blanca
+            </h4>
             <p class="text-gray-600 text-sm">
-              Al estar ubicados en la Costa Blanca, podemos desplazarnos
-              rápidamente a cualquier punto de nuestra zona de actuación para
-              realizar presupuestos y comenzar los trabajos.
+              Al estar ubicados estratégicamente en la Costa Blanca, podemos
+              desplazarnos rápidamente a cualquier punto de nuestra zona de
+              actuación: Alicante, Benidorm, Calpe, Altea, San Juan, El Campello
+              y Villajoyosa. Realizamos presupuestos gratuitos y comenzamos los
+              trabajos con la máxima rapidez.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO Local Content -->
+      <div class="mt-8 pt-8 border-t border-gray-200">
+        <h3 class="text-xl font-bold text-primary mb-4 text-center">
+          Servicios de Trabajos Verticales por Municipio
+        </h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm"
+        >
+          <div class="bg-white p-4 rounded-lg border">
+            <h4 class="font-semibold text-primary mb-2">Alicante Ciudad</h4>
+            <p class="text-gray-600">
+              Rehabilitación de fachadas, limpieza de patios de luces, sistemas
+              antiaves en edificios del centro y barrios residenciales.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border">
+            <h4 class="font-semibold text-primary mb-2">Benidorm</h4>
+            <p class="text-gray-600">
+              Limpieza de cristales en altura, rehabilitación de fachadas de
+              hoteles y edificios turísticos, sistemas antiaves.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border">
+            <h4 class="font-semibold text-primary mb-2">Calpe</h4>
+            <p class="text-gray-600">
+              Pintura de fachadas, limpieza de patios de luces, reparaciones en
+              altura en edificios costeros.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border">
+            <h4 class="font-semibold text-primary mb-2">Altea</h4>
+            <p class="text-gray-600">
+              Reparaciones en altura, mantenimiento de fachadas, limpieza de
+              cristales en edificios históricos.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border">
+            <h4 class="font-semibold text-primary mb-2">
+              San Juan de Alicante
+            </h4>
+            <p class="text-gray-600">
+              Pintura de fachadas, limpieza de cristales, reparaciones en altura
+              en urbanizaciones residenciales.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border">
+            <h4 class="font-semibold text-primary mb-2">El Campello</h4>
+            <p class="text-gray-600">
+              Rehabilitación de fachadas, sistemas antiaves, mantenimiento en
+              altura en edificios costeros.
             </p>
           </div>
         </div>
@@ -160,8 +226,12 @@ const { empresa } = data;
         href="#contacto"
         class="inline-block bg-primary text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
       >
-        Solicitar Presupuesto para tu Zona
+        Solicitar Presupuesto Gratuito en tu Municipio
       </a>
+      <p class="text-sm text-gray-600 mt-4">
+        Presupuestos gratuitos para trabajos verticales en Alicante, Benidorm,
+        Calpe, Altea, San Juan, El Campello y Villajoyosa
+      </p>
     </div>
   </div>
 </section>

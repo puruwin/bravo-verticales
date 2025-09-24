@@ -1,7 +1,7 @@
 {
   "empresa": {
     "nombre": "Bravo Trabajos Verticales",
-    "titulo_completo": "Empresa de trabajos verticales con cuerda en la Costa Blanca",
+    "titulo_completo": "Trabajos Verticales con Cuerda en Alicante, Benidorm, Calpe y Costa Blanca - Bravo Trabajos Verticales",
     "descripcion_principal": "Cuando se piensa en rehabilitar una fachada o realizar reparaciones en altura, lo primero que viene a la cabeza son los andamios, las molestias y los costes elevados. Sin embargo, hoy en día existe una alternativa más rápida, segura y económica: los trabajos verticales con cuerda.",
     "descripcion_empresa": "En Bravo Trabajos Verticales llevamos a cabo todo tipo de servicios en edificios y fachadas a lo largo de la Costa Blanca, desde Calpe hasta Alicante, ofreciendo soluciones sin necesidad de andamios, con total seguridad y siempre cumpliendo plazos.",
     "contacto": {
@@ -13,12 +13,91 @@
     "ubicacion": {
       "base": "Costa Blanca",
       "zona_actuacion": [
-        "Calpe",
+        "Alicante",
+        "San Juan de Alicante",
+        "El Campello",
+        "Villajoyosa",
         "Benidorm",
         "Altea",
-        "Alicante"
+        "Calpe"
       ],
-      "descripcion_zona": "Nuestra base está en la Costa Blanca, lo que nos permite atender con rapidez tanto en Calpe, Benidorm, Altea como en la ciudad de Alicante. Conocemos el clima y las particularidades de la zona, algo fundamental a la hora de elegir los materiales y tratamientos adecuados para fachadas expuestas al sol y la humedad marina."
+      "descripcion_zona": "Nuestra base está en la Costa Blanca, lo que nos permite atender con rapidez en toda la provincia de Alicante, desde Alicante ciudad hasta Calpe, pasando por San Juan, El Campello, Villajoyosa, Benidorm y Altea. Conocemos el clima y las particularidades de la zona, algo fundamental a la hora de elegir los materiales y tratamientos adecuados para fachadas expuestas al sol y la humedad marina.",
+      "coordenadas": {
+        "latitud": 38.3452,
+        "longitud": -0.4810
+      },
+      "municipios_detalle": [
+        {
+          "nombre": "Alicante",
+          "codigo_postal": "03001-03016",
+          "poblacion": "337482",
+          "servicios_principales": [
+            "rehabilitacion_fachadas",
+            "limpieza_patios",
+            "sistemas_antiaves"
+          ]
+        },
+        {
+          "nombre": "San Juan de Alicante",
+          "codigo_postal": "03550",
+          "poblacion": "24000",
+          "servicios_principales": [
+            "pintura_fachadas",
+            "limpieza_cristales",
+            "reparaciones_altura"
+          ]
+        },
+        {
+          "nombre": "El Campello",
+          "codigo_postal": "03560",
+          "poblacion": "29000",
+          "servicios_principales": [
+            "rehabilitacion_fachadas",
+            "sistemas_antiaves",
+            "mantenimiento_altura"
+          ]
+        },
+        {
+          "nombre": "Villajoyosa",
+          "codigo_postal": "03570",
+          "poblacion": "35000",
+          "servicios_principales": [
+            "pintura_fachadas",
+            "limpieza_patios",
+            "reparaciones_altura"
+          ]
+        },
+        {
+          "nombre": "Benidorm",
+          "codigo_postal": "03501-03503",
+          "poblacion": "70000",
+          "servicios_principales": [
+            "rehabilitacion_fachadas",
+            "limpieza_cristales",
+            "sistemas_antiaves"
+          ]
+        },
+        {
+          "nombre": "Altea",
+          "codigo_postal": "03590",
+          "poblacion": "23000",
+          "servicios_principales": [
+            "pintura_fachadas",
+            "reparaciones_altura",
+            "mantenimiento_altura"
+          ]
+        },
+        {
+          "nombre": "Calpe",
+          "codigo_postal": "03710",
+          "poblacion": "22000",
+          "servicios_principales": [
+            "rehabilitacion_fachadas",
+            "limpieza_patios",
+            "sistemas_antiaves"
+          ]
+        }
+      ]
     },
     "horarios": {
       "lunes_viernes": "8:00-18:00",

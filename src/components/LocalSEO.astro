@@ -1,0 +1,115 @@
+---
+// Componente para SEO local específico
+import data from "../data.json";
+
+const { empresa } = data;
+---
+
+<!-- Datos estructurados adicionales para SEO local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Trabajos Verticales con Cuerda",
+  "description": "Servicios profesionales de trabajos verticales con cuerda en la Costa Blanca",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Bravo Trabajos Verticales",
+    "telephone": {empresa.contacto.telefono_principal},
+    "email": {empresa.contacto.email},
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Costa Blanca",
+      "addressRegion": "Alicante",
+      "addressCountry": "ES"
+    },
+    "areaServed": [
+      "Alicante",
+      "San Juan de Alicante", 
+      "El Campello",
+      "Villajoyosa",
+      "Benidorm",
+      "Altea",
+      "Calpe"
+    ]
+  },
+  "serviceType": "Trabajos Verticales",
+  "category": "Construction Services",
+  "offers": {
+    "@type": "Offer",
+    "description": "Servicios de trabajos verticales con cuerda sin andamios",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+<!-- FAQ Schema para SEO local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Realizan trabajos verticales en Alicante?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, realizamos trabajos verticales con cuerda en toda la ciudad de Alicante, incluyendo rehabilitación de fachadas, limpieza de patios de luces y sistemas antiaves."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "¿Atienden en Benidorm y Calpe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, atendemos en toda la Costa Blanca incluyendo Benidorm, Calpe, Altea, San Juan de Alicante, El Campello y Villajoyosa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta un trabajo vertical?",
+      "acceptedAnswer": {
+        "@type": "Answer", 
+        "text": "Los precios varían según el tipo de trabajo y la altura. Ofrecemos presupuestos gratuitos para todos nuestros servicios en la Costa Blanca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Son más baratos que los andamios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, los trabajos verticales con cuerda son más económicos que los andamios tradicionales, además de más rápidos y sin molestias para los vecinos."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://bravotrabajosverticales.com/"
+    },
+    {
+      "@type": "ListItem", 
+      "position": 2,
+      "name": "Trabajos Verticales Costa Blanca",
+      "item": "https://bravotrabajosverticales.com/#zona-actuacion"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Servicios por Municipio",
+      "item": "https://bravotrabajosverticales.com/#servicios"
+    }
+  ]
+}
+</script>

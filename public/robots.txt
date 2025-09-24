@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bravotrabajosverticales.es/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1
+
+# Permitir acceso a recursos estáticos
+Allow: /favicon.svg
+Allow: /og-image.jpg
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Bloquear archivos innecesarios
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /*.json$
+Disallow: /*.md$
+
+# Específico para Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Específico para Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

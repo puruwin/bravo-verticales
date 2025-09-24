@@ -1,0 +1,46 @@
+{
+  "aria_labels": {
+    "navigation": "Navegación principal",
+    "contact_button": "Contactar con Bravo Trabajos Verticales",
+    "phone_button": "Llamar al teléfono de Bravo Trabajos Verticales",
+    "whatsapp_button": "Enviar mensaje por WhatsApp",
+    "email_button": "Enviar email a Bravo Trabajos Verticales",
+    "map": "Mapa de zona de actuación de Bravo Trabajos Verticales",
+    "services": "Servicios de trabajos verticales",
+    "testimonials": "Testimonios de clientes"
+  },
+  "alt_texts": {
+    "logo": "Logo de Bravo Trabajos Verticales",
+    "hero_image": "Trabajos verticales con cuerda en la Costa Blanca",
+    "service_images": "Servicios de trabajos verticales con cuerda",
+    "map": "Mapa de zona de actuación en la Costa Blanca",
+    "team_photos": "Equipo de Bravo Trabajos Verticales"
+  },
+  "focus_management": {
+    "skip_links": true,
+    "focus_visible": true,
+    "tab_order": "logical"
+  },
+  "color_contrast": {
+    "minimum_ratio": "4.5:1",
+    "enhanced_ratio": "7:1",
+    "color_blind_safe": true
+  },
+  "keyboard_navigation": {
+    "all_interactive_elements": true,
+    "escape_key_functionality": true,
+    "arrow_key_navigation": true
+  },
+  "screen_reader": {
+    "semantic_html": true,
+    "aria_landmarks": true,
+    "heading_structure": true,
+    "form_labels": true
+  },
+  "responsive_design": {
+    "mobile_first": true,
+    "touch_targets": "44px minimum",
+    "viewport_meta": true,
+    "flexible_layouts": true
+  }
+}

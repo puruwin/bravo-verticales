@@ -1,0 +1,58 @@
+{
+  "meta_tags": {
+    "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+    "robots": "index, follow",
+    "author": "Bravo Trabajos Verticales",
+    "generator": "Astro",
+    "format_detection": "telephone=yes",
+    "mobile_web_app_capable": "yes",
+    "application_name": "Bravo Trabajos Verticales",
+    "msapplication_tooltip": "Trabajos verticales con cuerda en la Costa Blanca",
+    "msapplication_starturl": "/"
+  },
+  "geo_tags": {
+    "region": "ES-VC",
+    "placename": "Costa Blanca, Alicante, España",
+    "position": "38.3452;-0.4810",
+    "icbm": "38.3452, -0.4810"
+  },
+  "business_tags": {
+    "locality": "Costa Blanca",
+    "region": "Alicante",
+    "country_name": "España",
+    "service_area": "Alicante, San Juan, Campello, Villajoyosa, Benidorm, Altea, Calpe",
+    "service_area_locality": "Alicante, San Juan, Campello, Villajoyosa, Benidorm, Altea, Calpe",
+    "service_area_region": "Alicante",
+    "service_area_country": "España"
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/bravotrabajosverticales",
+    "instagram": "https://www.instagram.com/bravotrabajosverticales",
+    "linkedin": "https://www.linkedin.com/company/bravo-trabajos-verticales",
+    "twitter": "@bravotrabajosverticales"
+  },
+  "analytics": {
+    "google_analytics": "G-XXXXXXXXXX",
+    "google_tag_manager": "GTM-XXXXXXX",
+    "google_search_console": "google-site-verification.html"
+  },
+  "performance": {
+    "preconnect_domains": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com",
+      "https://www.google-analytics.com",
+      "https://www.googletagmanager.com"
+    ],
+    "dns_prefetch_domains": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com"
+    ]
+  },
+  "pwa": {
+    "manifest": "/manifest.json",
+    "theme_color": "#2F45AF",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait-primary"
+  }
+}
